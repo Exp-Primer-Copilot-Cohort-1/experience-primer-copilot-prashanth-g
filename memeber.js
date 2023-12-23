@@ -1,30 +1,8 @@
 function skillsMember() {
-    var skills = [
-        {
-            "name": "HTML",
-            "level": "80%"
-        },
-        {
-            "name": "CSS",
-            "level": "70%"
-        },
-        {
-            "name": "JavaScript",
-            "level": "60%"
-        },
-        {
-            "name": "PHP",
-            "level": "50%"
-        },
-        {
-            "name": "MySQL",
-            "level": "40%"
-        },
-        {
-            "name": "Java",
-            "level": "30%"
-        }
-    ];
-    return skills;
+    var skill = document.getElementById("skill").value;
+    var skillList = document.getElementById("skillList");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(skill));
+    skillList.appendChild(li);
 }
     
